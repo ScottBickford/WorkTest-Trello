@@ -1,0 +1,12 @@
+﻿@model WorkTestTrello.Engine.Models.ListItemViewModel
+@if (Model.Cards == null || Model.Cards.Count == 0) {
+  <div class="no-items">No Items</div>
+} else {
+  foreach (var cardModel in Model.Cards) {
+    <a href="javascript:void();" class="trello-card-tile" data-cardid="@cardModel.ID">
+      <div>
+        @cardModel.Name
+      </div>
+    </a>
+  }
+}

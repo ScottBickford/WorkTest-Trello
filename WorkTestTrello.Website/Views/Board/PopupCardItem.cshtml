@@ -1,0 +1,37 @@
+﻿@model WorkTestTrello.Engine.Models.CardItemViewModel
+@{
+  Layout = "~/Views/Shared/_LayoutPopup.cshtml";
+}
+@Html.HiddenFor(m => m.ID)
+<div class="row">
+  <div class="col-md-12">
+    <h4>@Model.Name</h4>
+    <hr />
+    <p><label>Add Comment</label></p>
+    @Html.TextAreaFor(m => m.Comment, new { @class = "form-control text-area", placeholder = "Write a comment ...", maxlength = 16384 })
+
+    <div class="row">
+      <div class="col-md-2"><a id="send_comment" href="javascript:void(0);" class="btn btn-primary btn-lg">Send</a></div>
+      <div class="col-md-10"><span class="submit-status" style="display:none;"></span></div>
+    </div>
+
+    <hr />
+    <p><label>Comments</label></p>
+    <div id="card_comments">
+      @if (Model.Actions == null || Model.Actions.Count == 0) {
+        <div class="no-items">No Items</div>
+      } else {
+        foreach (var actionModel in Model.Actions) {
+          @Html.Partial("_CardAction", actionModel)
+        }
+      }
+    </div>
+  </div>
+</div>
+@section scripts {
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      $(this).card_action();
+    });
+  </script>
+}

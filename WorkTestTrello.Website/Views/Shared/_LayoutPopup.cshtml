@@ -1,0 +1,14 @@
+﻿@{
+  Layout = null;
+}
+@RenderSection("styles", required: false)
+<div class="popup-close"><a href="#" id="popupclose" /><img class="popupcloseimg" src="~/Images/General/CloseDialog.png" height="24" title="Close" /></div>
+<div class="popup-content">
+  @RenderBody()
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#popup-loading").hide();
+  });
+</script>
+@RenderSection("scripts", required: false)

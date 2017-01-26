@@ -1,0 +1,29 @@
+﻿@model WorkTestTrello.Engine.Models.ListListViewModel
+@{
+  ViewBag.Title = string.Format("Board {0}", Model.Board.Name);
+}
+<div class="trello-boarditem-background" style="background-color:@Model.Board.BackgroundColor;">
+  <div class="trello-boarditem-header">
+    <br />
+    <h4 style="color:@Model.Board.Color;">@Model.Board.Name</h4>
+  </div>
+  <div class="trello-list-container">
+    @if (Model.Lists == null || Model.Lists.Count == 0) {
+      <div class="no-items">No Items</div>
+    } else {
+      foreach (var listModel in Model.Lists) {
+        <div class="trello-list-tile" style="display: none;">
+          @listModel.Name
+          @Html.Partial("_Cards", listModel)
+        </div>
+      }
+    }
+  </div>
+</div>
+@section scripts {
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(this).setup_boarditem();
+  });
+  </script>
+}

@@ -1,0 +1,101 @@
+﻿/*************************************************************************************/
+/**** Trello Board styles *****/
+/*************************************************************************************/
+.trello-board-container {
+  display:grid;
+}
+
+.trello-board-tile {
+  width: 262px;
+  height: 80px;
+  font-size:16px;
+  margin-right:20px;
+  margin-bottom:20px;
+  padding:10px;
+  display:inline-block;
+  border-radius:4px;
+  overflow: auto;
+}
+
+.trello-board-container :hover {
+  opacity:0.7;
+  filter:alpha(opacity=70)
+}
+
+.trello-board-tile :hover {
+  text-decoration: none;
+  opacity:0.7;
+  filter:alpha(opacity=70)
+}
+
+.trello-boarditem-background {
+  position:absolute;
+  left:0;    
+  width: 100%;
+  height: 92%;
+  padding:0 4px 0 4px;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+
+.trello-list-container {
+  display:grid;
+  white-space:nowrap;
+  height:92%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.trello-list-tile {
+  width: 250px;
+  font-size:12px;
+  font-weight: bold;
+  margin-right:10px;
+  margin-bottom:20px;
+  padding:8px;
+  display:inline-block;
+  border-radius:4px;
+  background-color: rgb(230,230,230);
+  vertical-align:top;
+  white-space:normal;
+  max-height:98%;
+  overflow: auto;
+}
+
+.trello-card-tile div {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding:10px;
+  border-radius:4px;
+  background-color: white;
+}
+
+.trello-list-tile :hover {
+  text-decoration: none;
+  background-color:silver;
+}
+
+/*************************************************************************************/
+/**** Trello Card styles *****/
+/*************************************************************************************/
+.trello-cardaction-fullname {
+  font-weight:bold;
+  font-size:12px;
+  margin-bottom:4px;
+  margin-top:15px;
+}
+
+.trello-cardaction-comment {
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.trello-cardaction-date {
+  font-size:12px;
+  color:silver;
+  margin-top:10px;
+}

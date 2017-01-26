@@ -1,0 +1,8 @@
+﻿@model WorkTestTrello.Engine.Models.ActionItemViewModel
+<div>
+  <p>
+    <div class="trello-cardaction-fullname">@Model.FullName</div>
+    <div class="trello-cardaction-comment">@Html.Raw(Model.Comment)</div>
+    <div class="trello-cardaction-date">@Model.Date</div>
+  </p>
+</div>

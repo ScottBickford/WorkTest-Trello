@@ -1,0 +1,17 @@
+﻿@model WorkTestTrello.Engine.Models.OrganisationListViewModel
+@{
+  ViewBag.Title = "Boards";
+}
+@if (Model.Organisations == null || Model.Organisations.Count == 0) {
+  <div class="no-items">No Items</div>
+} else {
+  foreach (var orgModel in Model.Organisations) {
+    <div class="row">
+      <div class="col-md-12">
+        <br />
+        <label>@orgModel.Name</label>
+        @Html.Partial("_Boards", orgModel)
+      </div>
+    </div>
+  }
+}

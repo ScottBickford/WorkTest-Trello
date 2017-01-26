@@ -1,0 +1,14 @@
+﻿@model WorkTestTrello.Engine.Models.OrganisationItemViewModel
+<div class="trello-board-container">
+  @if (Model.Boards == null || Model.Boards.Count == 0) {
+    <div class="no-items">No Items</div>
+  } else {
+    foreach (var boardModel in Model.Boards) {
+      <a href="@Url.Action("BoardItem", new { ID = boardModel.ID })">
+        <div class="trello-board-tile" style="color:@boardModel.Color;background-color:@boardModel.BackgroundColor">
+          @boardModel.Name
+        </div>
+      </a>
+    }
+  }
+</div>

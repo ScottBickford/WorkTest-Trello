@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTestTrello.Website", "WorkTestTrello.Website\WorkTestTrello.Website.csproj", "{D5305EEF-95D4-45C8-8462-A89A596AFC56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTestTrello.Engine", "WorkTestTrello.Engine\WorkTestTrello.Engine.csproj", "{51F3E758-1F6B-4C2E-BF82-CC77B7559A55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTestTrello.Data", "WorkTestTrello.Data\WorkTestTrello.Data.csproj", "{DADD4755-7434-46FA-A405-5655FFF70555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTestTrello.Website.Tests", "WorkTestTrello.Website.Tests\WorkTestTrello.Website.Tests.csproj", "{5D1786C5-2FE0-43B3-AC3E-F2DC56FC517C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTestTrello.TestCases", "WorkTestTrello.TestCases\WorkTestTrello.TestCases.csproj", "{F3C0681A-7C51-4534-82B1-63A7D0A0C767}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5305EEF-95D4-45C8-8462-A89A596AFC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5305EEF-95D4-45C8-8462-A89A596AFC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5305EEF-95D4-45C8-8462-A89A596AFC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5305EEF-95D4-45C8-8462-A89A596AFC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F3E758-1F6B-4C2E-BF82-CC77B7559A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F3E758-1F6B-4C2E-BF82-CC77B7559A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F3E758-1F6B-4C2E-BF82-CC77B7559A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F3E758-1F6B-4C2E-BF82-CC77B7559A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADD4755-7434-46FA-A405-5655FFF70555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADD4755-7434-46FA-A405-5655FFF70555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADD4755-7434-46FA-A405-5655FFF70555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADD4755-7434-46FA-A405-5655FFF70555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1786C5-2FE0-43B3-AC3E-F2DC56FC517C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1786C5-2FE0-43B3-AC3E-F2DC56FC517C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1786C5-2FE0-43B3-AC3E-F2DC56FC517C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1786C5-2FE0-43B3-AC3E-F2DC56FC517C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C0681A-7C51-4534-82B1-63A7D0A0C767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C0681A-7C51-4534-82B1-63A7D0A0C767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C0681A-7C51-4534-82B1-63A7D0A0C767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C0681A-7C51-4534-82B1-63A7D0A0C767}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿@model WorkTestTrello.Engine.Models.HomeViewModel
+@{
+  ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>Work Test - Trello</h1>
+    <p>Please first login with your Trello credentials by clicking the button below.<br />
+    If you have already logged into Trello previously the system will automatically sign you in.</p>
+    <p><a id="trello_login" href="javascript:void(0);" class="btn btn-primary btn-lg">Login to Trello</a></p>    
+    <p class="submit-status" style="display:none;"></p>
+  </div>
+</div>
+
+@section scripts {
+<script type="text/javascript" src="//api.trello.com/1/client.js?key=@Model.TrelloDeveloperKey"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(this).setup_login();
+  });
+</script>
+}

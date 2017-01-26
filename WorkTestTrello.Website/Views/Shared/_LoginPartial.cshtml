@@ -1,0 +1,8 @@
+﻿@using WorkTestTrello.Engine
+@if (Authentication.IsLoggedIn()) {
+  <ul class="nav navbar-nav navbar-right">
+    <li>
+      <a id="header_username" href="javascript:void();">@Authentication.GetFullName()</a>
+    </li>
+  </ul>
+}

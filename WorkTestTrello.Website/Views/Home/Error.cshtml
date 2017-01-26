@@ -1,0 +1,11 @@
+﻿@model WorkTestTrello.Engine.Models.ErrorViewModel
+@{
+  ViewBag.Title = "Error";
+}
+<h3 class="text-danger">Error.</h3>
+<h4 class="text-danger">An error occurred while processing your request.</h4>
+@if (Model != null && Model.ReferenceNum.HasValue) {
+  <text>
+    <h5 class="text-danger"><br />Your Error Reference Number is: @Model.ReferenceNum.Value</h5>
+  </text>
+}
